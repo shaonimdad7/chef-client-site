@@ -62,14 +62,18 @@
 }
 
 .marquee_div {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.060);
+    font-weight: 700;
+    background-color: rgba(211, 70, 70, 0.178);
     height: 50px;
-    padding-top: 10px;
     padding-bottom: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 12px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
     border-radius: 8px;
+}
+
+.chef_section {
+    margin: 100px 0 60px 0;
 }

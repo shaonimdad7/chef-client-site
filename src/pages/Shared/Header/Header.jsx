@@ -42,11 +42,6 @@ const Header = () => {
                     </Row>
                 </Container>
             </div>
-            <div className='marquee_div'>
-                <Marquee className='text-danger marque_style'>
-                    There are our best chefs in the Restrarent, We can ensure you that you will have the best food you have ever had
-                </Marquee>
-            </div>
         </div>
     );
 };
