@@ -1,0 +1,57 @@
+.img_class {
+    width: 250px;
+}
+
+.marquee_btn_div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+    text-align: center;
+    justify-items: center;
+}
+
+.marquee_div {
+    background-color: rgba(0, 0, 0, 0.041);
+    height: 42px;
+    width: 80%;
+    padding: 0px 15px;
+    border-radius: 5px;
+}
+
+.marquee_style {
+    border-radius: 8px;
+}
+
+.btn_custom {
+    color: white;
+    width: 120px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(234, 6, 10, 250);
+    border: none;
+    border: 2px solid rgba(234, 6, 10, 250);
+}
+
+.btn_custom:hover {
+    color: rgba(234, 6, 10, 250);
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.87);
+    border: none;
+    border: 2px solid rgba(234, 6, 10, 250);
+}
+
+.nav_container {
+    margin-left: 10px;
+    color: black;
+    font-size: 20px;
+    background-color: red;
+    width: 80px;
+    text-align: center;
+}
+
+.nav_container:hover {
+    color: rgba(234, 6, 10, 250);
+    background-color: black;
+    padding: 8px 10px;
+}
