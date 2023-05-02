@@ -16,7 +16,7 @@ const Header = () => {
                         <Col md={3} sm={4}>
                             <div className='img_class'>
                                 <img className='img-fluid' src={chef} alt="" />
-                                <p className='mt-2'>{moment().format('ddd,Do MMMM,YYYY')}</p>
+                                <p className='mt-1 text-white'>{moment().format('ddd, Do MMMM, YYYY')}</p>
                             </div>
                         </Col>
                         <Col md={9} sm={8} >
