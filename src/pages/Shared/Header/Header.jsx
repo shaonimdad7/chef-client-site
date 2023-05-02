@@ -9,42 +9,44 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div>
-            <Container className='mt-4'>
-                <Row>
-                    <Col md={3} sm={4}>
-                        <div className='img_class'>
-                            <img className='img-fluid' src={chef} alt="" />
-                            <p className='mt-2'>{moment().format('ddd,Do MMMM,YYYY')}</p>
-                        </div>
-                    </Col>
-                    <Col md={9} sm={8} >
-                        <div className='marquee_btn_div'>
-                            <div className='marquee_div'>
-                                <Marquee className='text-danger mt-2'>
-                                    There are our best chefs in the Restrarent, We can ensure you that you will have the best food you have ever had
-                                </Marquee>
+        <div >
+            <div className='container_header'>
+                <Container className='pt-4'>
+                    <Row >
+                        <Col md={3} sm={4}>
+                            <div className='img_class'>
+                                <img className='img-fluid' src={chef} alt="" />
+                                <p className='mt-2'>{moment().format('ddd,Do MMMM,YYYY')}</p>
                             </div>
-                            <Button className='btn btn_custom'>Sign Up</Button>
-                        </div>
-                    </Col>
-                    <Navbar expand="lg">
-                        <Container>
-                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                            <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="mx-auto">
-                                    {/* <Nav.Link className='nav_container' href="#home">HOME</Nav.Link> */}
-                                    <Link className='nav_container' to="/home" href="#home">HOME</Link>
-                                    <Nav.Link className='nav_container' href="#about">ABOUT</Nav.Link>
-                                    <Nav.Link className='nav_container' href="#blog">BLOG</Nav.Link>
-                                    <Nav.Link className='nav_container' href="#blog">LOGIN</Nav.Link>
+                        </Col>
+                        <Col md={9} sm={8} >
+                            <div className='nav_btn_div'>
+                                <Navbar expand="lg nav_div">
+                                    <Container>
+                                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                        <Navbar.Collapse id="basic-navbar-nav">
+                                            <Nav className="mx-auto">
+                                                {/* <Nav.Link className='nav_container' href="#home">HOME</Nav.Link> */}
+                                                <Link className='nav_container' to="/home" href="#home">HOME</Link>
+                                                <Nav.Link className='nav_container' href="#about">ABOUT</Nav.Link>
+                                                <Nav.Link className='nav_container' href="#blog">BLOG</Nav.Link>
+                                                <Nav.Link className='nav_container' href="#blog">LOGIN</Nav.Link>
 
-                                </Nav>
-                            </Navbar.Collapse>
-                        </Container>
-                    </Navbar>
-                </Row>
-            </Container>
+                                            </Nav>
+                                        </Navbar.Collapse>
+                                    </Container>
+                                </Navbar>
+                                <Button className='btn btn_custom mt-1'>Sign Up</Button>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            <div className='marquee_div'>
+                <Marquee className='text-danger marque_style'>
+                    There are our best chefs in the Restrarent, We can ensure you that you will have the best food you have ever had
+                </Marquee>
+            </div>
         </div>
     );
 };
