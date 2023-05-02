@@ -1,0 +1,19 @@
+.slider {
+    background-image: linear-gradient(to right, rgba(22, 21, 21, 0.719), rgba(36, 34, 34, 0.336), rgba(39, 38, 38, 0.267)), url(../../assets/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+}
+
+.banner_p {
+    margin: 0px 20%;
+    padding: 120px 0px;
+    color: white;
+    line-height: 30px;
+}
+
+.banner_p h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
