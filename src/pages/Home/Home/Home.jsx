@@ -3,6 +3,7 @@ import Bannar from '../../Bannar/Bannar';
 import Chef from '../../../Chef/Chef';
 import { useLoaderData } from 'react-router-dom';
 import BestItem from '../BestItem/BestItem';
+import './Home.css'
 
 const Home = () => {
     const categories = useLoaderData();
