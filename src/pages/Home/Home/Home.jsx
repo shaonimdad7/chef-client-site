@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Bannar from '../../Bannar/Bannar';
 import Chef from '../../../Chef/Chef';
+import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
-
-    const [categories, setCategories] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost:5000/categories')
-            .then(res => res.json())
-            .then(data => setCategories(data))
-            .catch(error => console.error(error))
-    }, [])
+    const categories = useLoaderData();
+    // const [categories, setCategories] = useState([]);
+    // useEffect(() => {
+    //     fetch('catagory.json')
+    //         .then(res => res.json())
+    //         .then(data => setJobcatafories(data))
+    // }, [])
 
     return (
         <div>

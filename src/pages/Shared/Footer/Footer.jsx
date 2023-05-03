@@ -43,7 +43,7 @@ const Footer = () => {
                         <div className='footer_ul'>
                             <p>524 Broadway , NYC</p>
                             <p>+1 777 - 978 - 5570</p>
-                            <p>MicrosoftInfo@gmail.com</p>
+                            <p>ChefCuisin@gmail.com</p>
                         </div >
                     </div>
                 </div>

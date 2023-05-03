@@ -28,15 +28,20 @@
     gap: 20px;
 }
 
+.card_group_container:hover {
+    background-color: #ddd9d9;
+}
+
+
 .btn_recipe {
     color: white;
-    width: 150px;
-    height: 50px;
     font-size: 18px;
     background-color: rgba(0, 0, 0, 0.87);
     border: none;
     border-radius: 10px;
     transition: .3s;
+    padding: 10px 35px;
+    text-decoration: none;
 }
 
 .btn_recipe:hover {

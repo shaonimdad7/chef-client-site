@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardGroup, Col, Row } from 'react-bootstrap';
 import './Chef.css'
+import { Link } from 'react-router-dom';
 
 const Chef = ({ Catagory }) => {
     console.log(Catagory)
@@ -17,7 +18,7 @@ const Chef = ({ Catagory }) => {
                     <p className=''>{recipes}</p>
                     <p>How many liked it: {like}</p>
                 </div>
-                <button className='btn_recipe mt-1'>View Recipes</button>
+                <Link to={`/details/${id}`} className='btn_recipe mt-1'>View Recipes</Link>
             </div>
         </div>
     );

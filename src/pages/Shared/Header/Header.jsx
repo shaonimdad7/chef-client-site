@@ -29,7 +29,8 @@ const Header = () => {
                                                 {/* <Nav.Link className='nav_container' href="#home">HOME</Nav.Link> */}
                                                 <Link className='nav_container' to="/home" href="#home">HOME</Link>
                                                 <Nav.Link className='nav_container' href="#about">ABOUT</Nav.Link>
-                                                <Nav.Link className='nav_container' href="#blog">BLOG</Nav.Link>
+                                                {/* <Nav.Link className='nav_container' href="#blog">BLOG</Nav.Link> */}
+                                                <Link className='nav_container' to="/blog" href="#home">BLOG</Link>
                                                 <Nav.Link className='nav_container' href="#blog">LOGIN</Nav.Link>
 
                                             </Nav>
