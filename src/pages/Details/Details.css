@@ -26,3 +26,28 @@
 .recipe_img img {
     width: 100%;
 }
+
+/* ------------------media css for mobile phone  -----------------*/
+@media (max-width: 575.98px) {
+    .details_container {
+        width: 92%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 10px;
+    }
+
+    .details_img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .details_img img {
+        width: 100%;
+    }
+
+    .recipe_img {
+        width: 90px;
+    }
+}

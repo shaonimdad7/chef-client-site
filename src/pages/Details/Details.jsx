@@ -22,7 +22,8 @@ const Details = () => {
             <h2 className="text-center mt-5">This is the Details of Our chef- <span className="text-danger">{name}</span></h2>
             <div className="details_container">
                 <div>
-                    <div><img src={img} alt="" />
+                    <div className="details_img">
+                        <img src={img} alt="" />
                     </div>
                     <div className="mt-5">
                         <h4 className="mt-3">{name}</h4>

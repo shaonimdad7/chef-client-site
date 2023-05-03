@@ -13,33 +13,35 @@ const Header = () => {
             <div className='container_header'>
                 <Container className='pt-4'>
                     <Row >
-                        <Col md={3} sm={4}>
-                            <div className='img_class'>
-                                <img className='img-fluid' src={chef} alt="" />
-                                <p className='mt-1 text-white'>{moment().format('ddd, Do MMMM, YYYY')}</p>
-                            </div>
-                        </Col>
-                        <Col md={9} sm={8} >
-                            <div className='nav_btn_div'>
-                                <Navbar expand="lg nav_div">
-                                    <Container>
-                                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                                        <Navbar.Collapse id="basic-navbar-nav">
-                                            <Nav className="mx-auto">
-                                                {/* <Nav.Link className='nav_container' href="#home">HOME</Nav.Link> */}
-                                                <Link className='nav_container' to="/home" href="#home">HOME</Link>
-                                                <Nav.Link className='nav_container' href="#about">ABOUT</Nav.Link>
-                                                {/* <Nav.Link className='nav_container' href="#blog">BLOG</Nav.Link> */}
-                                                <Link className='nav_container' to="/blog" href="#home">BLOG</Link>
-                                                <Nav.Link className='nav_container' href="#blog">LOGIN</Nav.Link>
+                        <div className='row_custom'>
+                            <Col md={3} sm={4}>
+                                <div className='img_class'>
+                                    <img className='img-fluid' src={chef} alt="" />
+                                    <p className='mt-1 text-white'>{moment().format('ddd, Do MMMM, YYYY')}</p>
+                                </div>
+                            </Col>
+                            <Col md={9} sm={8} >
+                                <div className='nav_btn_div'>
+                                    <Navbar expand="lg nav_div">
+                                        <Container>
+                                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                            <Navbar.Collapse id="basic-navbar-nav ">
+                                                <Nav className="mx-auto">
+                                                    {/* <Nav.Link className='nav_container' href="#home">HOME</Nav.Link> */}
+                                                    <Link className='nav_container' to="/home" href="#home">HOME</Link>
+                                                    <Nav.Link className='nav_container' href="#about">ABOUT</Nav.Link>
+                                                    {/* <Nav.Link className='nav_container' href="#blog">BLOG</Nav.Link> */}
+                                                    <Link className='nav_container' to="/blog" href="#home">BLOG</Link>
+                                                    <Nav.Link className='nav_container' href="#blog">LOGIN</Nav.Link>
 
-                                            </Nav>
-                                        </Navbar.Collapse>
-                                    </Container>
-                                </Navbar>
-                                <Button className='btn btn_custom mt-1'>Sign Up</Button>
-                            </div>
-                        </Col>
+                                                </Nav>
+                                            </Navbar.Collapse>
+                                        </Container>
+                                    </Navbar>
+                                    <Button className='btn btn_custom mt-1'>Sign Up</Button>
+                                </div>
+                            </Col>
+                        </div>
                     </Row>
                 </Container>
             </div>

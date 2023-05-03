@@ -1,6 +1,5 @@
 import React from 'react';
 import './Bannar.css'
-import { Button } from 'react-bootstrap';
 import Marquee from 'react-fast-marquee';
 
 const Bannar = () => {

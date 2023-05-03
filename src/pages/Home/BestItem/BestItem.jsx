@@ -10,15 +10,15 @@ const BestItem = () => {
         <Container>
             <h2 className='best'>We Know How to Make the <br /> Hygienic And Trusted Food in the <br /> city....</h2>
             <div className='bestitem_container'>
-                <div>
+                <div className='best_itemn_img'>
                     <img src={img1} alt="" />
                     <h4 className='text-center mt-2'>20 Years of Experience</h4>
                 </div>
-                <div>
+                <div className='best_itemn_img'>
                     <img src={img2} alt="" />
                     <h4 className='text-center mt-2'>20 Years of Experience</h4>
                 </div>
-                <div>
+                <div className='best_itemn_img'>
                     <img src={img3} alt="" />
                     <h4 className='text-center mt-2'>20 Years of Experience</h4>
                 </div>

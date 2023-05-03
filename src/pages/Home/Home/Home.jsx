@@ -4,6 +4,7 @@ import Chef from '../../../Chef/Chef';
 import { useLoaderData } from 'react-router-dom';
 import BestItem from '../BestItem/BestItem';
 import './Home.css'
+import PopularRecipe from '../PopularRecipe/PopularRecipe';
 
 const Home = () => {
     const categories = useLoaderData();
@@ -29,6 +30,7 @@ const Home = () => {
                 </div>
             </div>
             <BestItem></BestItem>
+            <PopularRecipe></PopularRecipe>
         </div>
     );
 };

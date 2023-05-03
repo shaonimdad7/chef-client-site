@@ -6,6 +6,10 @@
     width: 250px;
 }
 
+.row_custom {
+    display: flex;
+}
+
 .nav_btn_div {
     display: flex;
     justify-content: space-between;
@@ -15,7 +19,6 @@
 }
 
 .nav_div {
-    /* background-color: rgba(0, 0, 0, 0.041); */
     padding: 0px 15px;
     border-radius: 5px;
     margin-left: 50px;
@@ -76,4 +79,40 @@
 
 .chef_section {
     margin: 100px 0 60px 0;
+}
+
+
+/* ------------------media css for mobile phone  -----------------*/
+@media (max-width: 575.98px) {
+    .img_class {
+        width: 150px;
+    }
+
+    .nav_btn_div {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 50px;
+        justify-content: space-between;
+        margin-top: 5px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .row_custom {
+        display: grid;
+        justify-content: space-between;
+    }
+
+    .nav_div {
+        padding: 0px 15px;
+        border-radius: 5px;
+        margin-left: 0px;
+    }
+
+    .marquee_div {
+        width: 90%;
+        font-weight: 400;
+        background-color: rgba(236, 72, 72, 0.178);
+        margin-bottom: 15px;
+    }
 }
