@@ -11,14 +11,15 @@ const Chef = ({ Catagory }) => {
             <div className='card_img'>
                 <img src={img} alt="" />
             </div>
+            <hr className='custom_hr w-75 mx-auto mb-2 mt-3' />
             <div className='mt-4 text-center'>
-                <h4>{name}</h4>
+                <h4 className='name'>{name}</h4>
                 <div>
-                    <p><span className='text-danger'>Experience:</span> {years}</p>
+                    <p className=''><span className=''>Experience:</span> {years}</p>
                     <p className=''>{recipes}</p>
-                    <p>How many liked it: {like}</p>
+                    <p className=' mb-4'>How many liked it: {like}</p>
                 </div>
-                <Link to={`/details/${id}`} className='btn_recipe mt-1'>View Recipes</Link>
+                <Link to={`/details/${id}`} className='btn_recipe'>View Recipes</Link>
             </div>
         </div>
     );

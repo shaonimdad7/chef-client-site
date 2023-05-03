@@ -1,8 +1,16 @@
 .card_img {
-    width: 350px;
+    width: 150px;
     border-radius: 50%;
-    height: 350px;
+    height: 150px;
     margin: 0 auto;
+}
+
+.custom_hr {
+    border: 1px solid dotted;
+}
+
+.name {
+    font-size: 22px;
 }
 
 .card_img img {
@@ -13,13 +21,13 @@
 
 .card_container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin: 0px 100px;
     gap: 20px;
 }
 
 .card_group_container {
-    width: 450px;
+    width: 250px;
     min-height: 400px;
     margin: 0 auto;
     box-shadow: 0px 1px 6px 1px #6a6a6a;
@@ -29,14 +37,14 @@
 }
 
 .card_group_container:hover {
-    background-color: #ddd9d9;
+    /* background-color: #cfc5c5; */
 }
 
 
 .btn_recipe {
     color: white;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.87);
+    background-color: black;
     border: none;
     border-radius: 10px;
     transition: .3s;
@@ -46,7 +54,7 @@
 
 .btn_recipe:hover {
     color: rgba(234, 6, 10, 250);
-    background-color: black;
+    /* background-color: white; */
     border: none;
     border-radius: 10px;
 }

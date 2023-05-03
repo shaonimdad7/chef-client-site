@@ -1,0 +1,28 @@
+.details_container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    box-shadow: 0px 1px 6px 1px #6a6a6a;
+    padding: 40px 30px;
+}
+
+.recipe_div li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.recipe_img_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe_img {
+    width: 100px;
+}
+
+.recipe_img img {
+    width: 100%;
+}
