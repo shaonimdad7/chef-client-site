@@ -5,6 +5,8 @@ import Blog from "../pages/BLog/Blog";
 import Details from "../pages/Details/Details";
 import SignUp from "../pages/Shared/SignUp/SignUp";
 import Login from "../pages/Shared/Login/Login";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import About from "../pages/About/About";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +24,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/details/:id',
-                element: <Details></Details>,
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
                 loader: () => fetch('http://localhost:5000/categories')
             },
             {
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/about',
+                element: <About></About>
             }
         ]
     }

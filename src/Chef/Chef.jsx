@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardGroup, Col, Row } from 'react-bootstrap';
 import './Chef.css'
 import { Link } from 'react-router-dom';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 const Chef = ({ Catagory }) => {
     console.log(Catagory)

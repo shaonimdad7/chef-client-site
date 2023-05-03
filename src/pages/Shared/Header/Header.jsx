@@ -8,6 +8,7 @@ import Marquee from "react-fast-marquee";
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../Provider/AuthProvider';
 
+
 const Header = () => {
 
     const { user, logOut } = useContext(AuthContext)
@@ -30,9 +31,6 @@ const Header = () => {
                                 <div className='img_class'>
                                     <img className='img-fluid' src={chef} alt="" />
                                     <p className='mt-1 text-white'>{moment().format('ddd, Do MMMM, YYYY')}</p>
-                                    {/* {user && <p className='text-white'></p>
-
-                                    } */}
                                 </div>
                             </Col>
                             <Col md={9} sm={8} >
@@ -46,7 +44,7 @@ const Header = () => {
                                                         <Link className='nav_container' to="/home" href="#home">HOME</Link>
                                                     </Nav.Link>
                                                     <Nav.Link className='' href="#about">
-                                                        <Link className='nav_container' to="/abput" href="#home">ABOUT</Link>
+                                                        <Link className='nav_container' to="/about" href="#home">ABOUT</Link>
                                                     </Nav.Link>
                                                     <Nav.Link className='' href="#blog">
                                                         <Link className='nav_container' to="/blog" href="#home">BLOG</Link>
