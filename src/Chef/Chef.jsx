@@ -19,7 +19,9 @@ const Chef = ({ Catagory }) => {
                     <p className=''>{recipes}</p>
                     <p className=' mb-4'>How many liked it: {like}</p>
                 </div>
-                <Link to={`/details/${id}`} className='btn_recipe'>View Recipes</Link>
+                <div className='mb-3'>
+                    <Link to={`/details/${id}`} className='btn_recipe'>View Recipes</Link>
+                </div>
             </div>
         </div>
     );

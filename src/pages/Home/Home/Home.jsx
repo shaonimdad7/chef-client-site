@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Bannar from '../../Bannar/Bannar';
 import Chef from '../../../Chef/Chef';
 import { useLoaderData } from 'react-router-dom';
+import BestItem from '../BestItem/BestItem';
 
 const Home = () => {
     const categories = useLoaderData();
@@ -26,6 +27,7 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <BestItem></BestItem>
         </div>
     );
 };
