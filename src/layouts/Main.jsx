@@ -8,13 +8,6 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
-            {/* <Container>
-                <Row>
-                    <Col sm={9}>sm=9</Col>
-                    <Col sm={3}>sm=3</Col>
-                </Row>
-                
-            </Container> */}
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
