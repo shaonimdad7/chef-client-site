@@ -49,9 +49,6 @@ const Header = () => {
                                                     <Nav.Link className='' href="#blog">
                                                         <Link className='nav_container' to="/blog" href="#home">BLOG</Link>
                                                     </Nav.Link>
-                                                    <Nav.Link className='' href="#ask">
-                                                        <Link className='nav_container' to="/ask" href="#home">ASK</Link>
-                                                    </Nav.Link>
 
                                                     <Nav.Link className='' href="#SignUp">
                                                         <Link className='nav_container' to="/signup" href="#signup">SIGNUP</Link>

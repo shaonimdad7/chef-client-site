@@ -7,7 +7,6 @@ import SignUp from "../pages/Shared/SignUp/SignUp";
 import Login from "../pages/Shared/Login/Login";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import About from "../pages/About/About";
-import Ask from "../pages/Ask/Ask";
 
 const router = createBrowserRouter([
     {
@@ -39,11 +38,6 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
-            },
-            {
-                path: '/ask',
-                element: <Ask></Ask>
-
             }
         ]
     }
