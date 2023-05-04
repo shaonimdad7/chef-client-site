@@ -8,13 +8,6 @@ import PopularRecipe from '../PopularRecipe/PopularRecipe';
 
 const Home = () => {
     const categories = useLoaderData();
-    // const [categories, setCategories] = useState([]);
-    // useEffect(() => {
-    //     fetch('catagory.json')
-    //         .then(res => res.json())
-    //         .then(data => setJobcatafories(data))
-    // }, [])
-
     return (
         <div>
             <Bannar></Bannar>

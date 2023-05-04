@@ -1,3 +1,12 @@
+.custom_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.last_child {
+    margin-left: 110px;
+}
+
 .container_header {
     background-color: red;
 }
@@ -20,15 +29,14 @@
 
 .nav_div {
     padding: 0px 1px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .btn_custom {
     color: white;
     width: 100px;
     height: 40px;
-    margin-top: -10px;
-    margin-left: 20px;
+    margin-bottom: 10px;
     font-size: 17px;
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0.87);
@@ -85,6 +93,19 @@
 
 .custom_welcome {
     margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: playfair display, serif;
+}
+
+.img_dispaly {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.spinner_div {
+    width: 200px;
+    margin: 100px auto;
 }
 
 /* ------------------media css for mobile phone  -----------------*/
@@ -118,5 +139,10 @@
         font-weight: 400;
         background-color: rgba(236, 72, 72, 0.178);
         margin-bottom: 15px;
+    }
+
+    .last_child {
+        margin-left: 10px;
+        margin-top: 10px;
     }
 }

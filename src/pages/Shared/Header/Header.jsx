@@ -24,8 +24,8 @@ const Header = () => {
     return (
         <div >
             <div className='container_header'>
-                <Container className='pt-4'>
-                    <Row >
+                <Container className='pt-4 '>
+                    <Row className='custom_container'>
                         <div className='row_custom'>
                             <Col md={3} sm={4}>
                                 <div className='img_class'>
@@ -33,7 +33,7 @@ const Header = () => {
                                     <p className='mt-1 text-white'>{moment().format('ddd, Do MMMM, YYYY')}</p>
                                 </div>
                             </Col>
-                            <Col md={9} sm={8} >
+                            <Col md={6}  >
                                 <div className='nav_btn_div'>
                                     <Navbar expand="lg nav_div">
                                         <Container>
@@ -49,6 +49,9 @@ const Header = () => {
                                                     <Nav.Link className='' href="#blog">
                                                         <Link className='nav_container' to="/blog" href="#home">BLOG</Link>
                                                     </Nav.Link>
+                                                    <Nav.Link className='' href="#ask">
+                                                        <Link className='nav_container' to="/ask" href="#home">ASK</Link>
+                                                    </Nav.Link>
 
                                                     <Nav.Link className='' href="#SignUp">
                                                         <Link className='nav_container' to="/signup" href="#signup">SIGNUP</Link>
@@ -58,12 +61,6 @@ const Header = () => {
                                                         <Link className='nav_container' to="/login" href="#signup">LOGIN</Link>
                                                     </Nav.Link>
 
-                                                    {/* <Link to="/login">
-                                                        <Button className='btn btn_custom mt-1 ml-2  mb-3'>Login
-                                                        </Button>             
-                                                    </Link> */}
-                                                    {user && <span className='custom_welcome text-white mt-2'> welcome {user.email} <button className='btn btn_custom mt-2' onClick={handleLogOut}>LogOut</button> </span>}
-
 
                                                 </Nav>
                                             </Navbar.Collapse>
@@ -71,11 +68,28 @@ const Header = () => {
                                     </Navbar>
                                 </div>
                             </Col>
+                            <Col className='last_child' md={3}>
+                                <div>
+                                    {user
+                                        && <img className='img_dispaly' src={user.photoURL
+                                        } alt="" />
+                                    }
+
+
+                                    {user &&
+                                        <span className='custom_welcome text-white '>
+                                            <p>{user.displayName}</p>
+                                            <p>{user.email}</p>
+                                            <button className='btn btn_custom' onClick={handleLogOut}>LogOut</button>
+                                        </span>}
+
+                                </div>
+                            </Col>
                         </div>
                     </Row>
-                </Container>
-            </div>
-        </div>
+                </Container >
+            </div >
+        </div >
     );
 };
 

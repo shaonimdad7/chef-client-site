@@ -56,7 +56,7 @@ const Details = () => {
                                 <p className="rating"><div className="text-center">{ratingtwo}</div></p>
                             </div>
                             <p className="text-center mt-2"> {paraone}</p>
-                            <button className="btn_submit">Feature</button>
+                            <button className="btn_submit">Favorite </button>
                         </div>
                         <div className="card_container_div">
                             <div className="recipe_img ">
@@ -72,7 +72,7 @@ const Details = () => {
                                 <p className="rating"><div className="text-center">{ratingone}</div></p>
                             </div>
                             <p className="text-center mt-2"> {paratwo}</p>
-                            <button className="btn_submit">Feature</button>
+                            <button className="btn_submit">Favorite </button>
                         </div>
                         <div className="card_container_div">
                             <div className="recipe_img ">
@@ -88,7 +88,7 @@ const Details = () => {
                                 <p className="rating"><div className="text-center">{ratingthree}</div></p>
                             </div>
                             <p className="text-center mt-2"> {parathree}</p>
-                            <button className="btn_submit">Feature</button>
+                            <button className="btn_submit">Favorite </button>
                         </div>
                         <div className="card_container_div">
                             <div className="recipe_img ">
@@ -104,7 +104,7 @@ const Details = () => {
                                 <p className="rating"><div className="text-center">{ratingfour}</div></p>
                             </div>
                             <p className="text-center mt-2"> {parafour}</p>
-                            <button className="btn_submit">Feature</button>
+                            <button className="btn_submit">Favorite </button>
                         </div>
                     </div>
                 </div>

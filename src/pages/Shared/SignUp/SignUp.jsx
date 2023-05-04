@@ -51,6 +51,11 @@ const SignUp = () => {
 
                     </div>
                     <div className='form_control'>
+                        <label htmlFor="email">PhotoUrl</label>
+                        <input type="text" name="photourl" id="" required />
+
+                    </div>
+                    <div className='form_control'>
                         <label htmlFor="password">Password</label>
                         <input type="password" name="password" id="" required />
 
