@@ -16,7 +16,7 @@ const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/categories')
+                loader: () => fetch('https://b7a10-chef-recipe-hunter-server-side-shaonimdad7-shaonimdad7.vercel.app/categories')
             },
             {
                 path: '/blog',
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             {
                 path: '/details/:id',
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/categories')
+                loader: () => fetch('https://b7a10-chef-recipe-hunter-server-side-shaonimdad7-shaonimdad7.vercel.app/categories')
             },
             {
                 path: '/login',

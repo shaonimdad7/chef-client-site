@@ -77,3 +77,40 @@
         margin-top: 20px;
     }
 }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .single_item_container {
+        width: 240px;
+    }
+
+    .main_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .single_item_container_img {
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .top_container {
+        margin-top: 30px;
+    }
+
+    .top_container h2 {
+        font-size: 30px;
+    }
+
+    .top_container {
+        font-size: 18px;
+    }
+
+    .main_container {
+        gap: 20px;
+        margin-top: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {}

@@ -27,7 +27,7 @@ const Header = () => {
                 <Container className='pt-4 '>
                     <Row className='custom_container'>
                         <div className='row_custom'>
-                            <Col md={3} sm={4}>
+                            <Col md={6}>
                                 <div className='img_class'>
                                     <img className='img-fluid' src={chef} alt="" />
                                     <p className='mt-1 text-white'>{moment().format('ddd, Do MMMM, YYYY')}</p>
@@ -39,7 +39,7 @@ const Header = () => {
                                         <Container>
                                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                                             <Navbar.Collapse id="basic-navbar-nav ">
-                                                <Nav className="mx-auto">
+                                                <Nav className="me-auto">
                                                     <Nav.Link className='' href="#home">
                                                         <Link className='nav_container' to="/home" href="#home">HOME</Link>
                                                     </Nav.Link>
@@ -66,22 +66,22 @@ const Header = () => {
                                 </div>
                             </Col>
                             <Col className='last_child' md={3}>
-                                <div>
-                                    {user
-                                        && <img className='img_dispaly' src={user.photoURL
-                                        } alt="" />
-                                    }
-
-
-                                    {user &&
-                                        <span className='custom_welcome text-white '>
-                                            <p>{user.displayName}</p>
-                                            <p>{user.email}</p>
-                                            <button className='btn btn_custom' onClick={handleLogOut}>LogOut</button>
-                                        </span>}
-
-                                </div>
                             </Col>
+                        </div>
+                        <div>
+                            {user
+                                && <img className='img_dispaly' src={user.photoURL
+                                } alt="" />
+                            }
+
+
+                            {user &&
+                                <span className='custom_welcome text-white '>
+                                    <p>{user.displayName}</p>
+                                    <p>{user.email}</p>
+                                    <button className='btn btn_custom' onClick={handleLogOut}>LogOut</button>
+                                </span>}
+
                         </div>
                     </Row>
                 </Container >

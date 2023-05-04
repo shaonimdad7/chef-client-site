@@ -111,7 +111,7 @@
 /* ------------------media css for mobile phone  -----------------*/
 @media (max-width: 575.98px) {
     .img_class {
-        width: 150px;
+        width: 120px;
     }
 
     .nav_btn_div {
@@ -124,7 +124,7 @@
     }
 
     .row_custom {
-        display: grid;
+        display: flex;
         justify-content: space-between;
     }
 
@@ -144,5 +144,117 @@
     .last_child {
         margin-left: 10px;
         margin-top: 10px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .last_child {
+        margin-left: 30px;
+    }
+
+    .img_class {
+        width: 150px;
+    }
+
+    .row_custom {
+        display: flex;
+        justify-content: space-between;
+        gap: 180px;
+    }
+
+    .nav_btn_div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .nav_div {
+        padding: 0px 1px;
+        margin-left: 10px;
+    }
+
+
+    .nav_container {
+        margin-left: 20px;
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        width: 120px;
+        padding: 10px;
+        height: 45px;
+        text-align: center;
+        border-radius: 10px;
+        align-items: center;
+        padding: 10px;
+        text-decoration: none;
+        transition: .3s;
+    }
+
+    .nav_container:hover {
+        background-color: rgba(0, 0, 0, 0.822);
+        color: white;
+        padding: 10px;
+    }
+
+    .marquee_div {
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 700;
+        background-color: rgba(211, 70, 70, 0.178);
+        height: 50px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 15px;
+        border-radius: 8px;
+    }
+
+    .chef_section {
+        margin: 100px 0 60px 0;
+    }
+
+    .custom_welcome {
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: playfair display, serif;
+    }
+
+    .img_dispaly {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .spinner_div {
+        width: 200px;
+        margin: 100px auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .custom_container {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .img_class {
+        width: 250px;
+    }
+
+    .row_custom {
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+    }
+
+    .marquee_div {
+        width: 100%;
+        font-weight: 400;
+        margin-bottom: 20px;
     }
 }

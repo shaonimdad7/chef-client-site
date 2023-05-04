@@ -61,3 +61,44 @@
         gap: 20px;
     }
 }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 0px;
+        gap: 30px;
+    }
+
+    .card_group_container {
+        width: 280px;
+        min-height: 300px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .card_img {
+        width: 250px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .card_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 50px;
+        gap: 10px;
+    }
+}

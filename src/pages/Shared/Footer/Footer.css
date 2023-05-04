@@ -7,7 +7,6 @@
     background-color: #242424;
     color: white;
     padding: 80px 40px;
-    /* text-align: center; */
 }
 
 .footer_header {
@@ -32,6 +31,36 @@
         gap: 30px;
         margin-top: 70px;
         padding: 40px 30px;
+    }
+
+    .footer_header {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .footer_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        margin-top: 80px;
+        padding: 60px 30px;
+    }
+
+    .footer_header {
+        font-size: 25px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .footer_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        margin-top: 80px;
+        padding: 60px 30px;
     }
 
     .footer_header {
