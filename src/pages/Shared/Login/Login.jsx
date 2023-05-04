@@ -1,8 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './Login.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Provider/AuthProvider';
+import { FaGoogle } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaRegEyeSlash } from 'react-icons/fa';
+import { FaRegEye } from 'react-icons/fa';
+
+
+
+
 const Login = () => {
+    const [show, setShow] = useState(false);
 
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
@@ -39,14 +48,24 @@ const Login = () => {
                 </div>
                 <div className='form_control'>
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="" required />
+                    <input type={show ? "text" : "password"} name="password" id="" required />
+                    <p onClick={() => setShow(!show)} className='btn_hide'><small>
+                        {
+                            show ? <span>  <FaRegEye /></span> : <span><FaRegEyeSlash /></span>
+                        }
+                    </small></p>
 
                 </div>
 
                 <input className='btn_submit' type="submit" value="Login" />
 
+
             </form>
             <p><small>New here? <Link to="/signup">Create New Account</Link></small></p>
+            <div className='btn_container'>
+                <button className='btn_google'> <FaGoogle /> Login With Google </button>
+                <button className='btn_google'> <FaGithub /> Login With Github </button>
+            </div>
         </div>
     );
 };

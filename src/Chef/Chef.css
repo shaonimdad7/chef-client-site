@@ -34,9 +34,10 @@
 
 .btn_recipe {
     color: white;
-    font-size: 18px;
-    background-color: black;
+    font-size: 19px;
+    background-color: red;
     border: none;
+    font-family: playfair display, serif;
     border-radius: 10px;
     transition: .3s;
     padding: 10px 35px;
@@ -45,7 +46,8 @@
 }
 
 .btn_recipe:hover {
-    color: rgba(234, 6, 10, 250);
+    color: red;
+    background-color: black;
     border: none;
     border-radius: 10px;
 }
