@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
 import './Details.css'
+import { FaRegThumbsUp } from 'react-icons/fa';
+import { FaRegHandPointDown } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 
 
 
@@ -15,48 +18,93 @@ const Details = () => {
         setDataState(findingid || {});
     }, [data, idUrl]);
 
-    const { img, name, Recipeimg, Recipeimgg, Recipeimggg, recipeName, recipeNamee, recipeNameee, ingredient, method, years, recipes, like } = datastate;
+    const { img, name, Recipeimgone, Recipeimggtwo, Recipeimgggthree, Recipeimgggfour, recipeName, recipeNamee, recipeNameee, ingredient, method, years, recipes, like, ratingone, ratingtwo, ratingthree, ratingfour, recipeNameeee, paraone, paratwo, parathree, parafour } = datastate;
 
     return (
         <div>
-            <h2 className="text-center mt-5">This is the Details of Our chef- <span className="text-danger">{name}</span></h2>
+            <h2 className="text-center header_detials">This is the Details of Our chef- <span className="text-danger">{name}</span></h2>
             <div className="details_container">
-                <div>
-                    <div className="details_img">
+                <div className="profile_img_container">
+                    <div className="img_div">
                         <img src={img} alt="" />
+
                     </div>
-                    <div className="mt-5">
-                        <h4 className="mt-3">{name}</h4>
-                        <h6><span className="text-danger ">Years of Experience:</span> {years}</h6>
-                        <h6><span className="text-danger">Recipes</span> {recipes}</h6>
-                        <h6><span className="text-danger">People Liked:</span> {like}</h6>
+                    <div className="info_div">
+                        <h3>{name}</h3>
+                        <p> {years}</p>
+                        <p><span className="like"><FaRegThumbsUp /></span>  <span className="like">{like}</span></p>
+                        <p>{recipes}</p>
+                        <p>{ingredient}</p>
+                        <p>{method}</p>
+
                     </div>
                 </div>
-                <div>
-                    <h3 className="mb-4">Details of this Chef</h3>
-                    <div>
-                        <h6 className="text-danger">recipe Names:</h6>
-                        <ul className="recipe_div">
-                            <li >{recipeName}</li>
-                            <li>{recipeNamee}</li>
-                            <li>{recipeNameee}</li>
-                        </ul>
-                        <h6><span className="text-danger">Ingredient used:</span> {ingredient}</h6>
-                        <h6 className="text-danger mt-4">Some of Recipes:</h6>
-                        <div className="recipe_img_container">
-                            <div className="recipe_img">
-                                <img src={Recipeimg} alt="" />
+                <div className="">
+                    <h5 className="part_two_header text-center"> Some Recipes of This Chef <FaRegHandPointDown /></h5>
+                    <div className="recipe_all_container">
+                        <div className="card_container_div">
+                            <div className="recipe_img ">
+                                <img src={Recipeimgone} alt="" />
                             </div>
-                            <div className="recipe_img">
-                                <img src={Recipeimgg} alt="" />
+                            <h5 className="text-center mt-3">{recipeName}</h5>
+                            <div className="rating_container mt-2">
+                                <p className="fastar">
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                </p>
+                                <p className="rating"><div className="text-center">{ratingtwo}</div></p>
                             </div>
-                            <div className="recipe_img">
-                                <img src={Recipeimggg} alt="" />
-                            </div>
+                            <p className="text-center mt-2"> {paraone}</p>
+                            <button className="btn_submit">Feature</button>
                         </div>
-                        <div className="mt-4">
-                            <h6 className="text-danger">The method used:</h6>
-                            <p>{method}</p>
+                        <div className="card_container_div">
+                            <div className="recipe_img ">
+                                <img src={Recipeimggtwo} alt="" />
+                            </div>
+                            <h5 className="text-center mt-3">{recipeNamee}</h5>
+                            <div className="rating_container mt-2">
+                                <p className="fastar">
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                </p>
+                                <p className="rating"><div className="text-center">{ratingone}</div></p>
+                            </div>
+                            <p className="text-center mt-2"> {paratwo}</p>
+                            <button className="btn_submit">Feature</button>
+                        </div>
+                        <div className="card_container_div">
+                            <div className="recipe_img ">
+                                <img src={Recipeimgggthree} alt="" />
+                            </div>
+                            <h5 className="text-center mt-3">{recipeNameee}</h5>
+                            <div className="rating_container mt-2">
+                                <p className="fastar">
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                </p>
+                                <p className="rating"><div className="text-center">{ratingthree}</div></p>
+                            </div>
+                            <p className="text-center mt-2"> {parathree}</p>
+                            <button className="btn_submit">Feature</button>
+                        </div>
+                        <div className="card_container_div">
+                            <div className="recipe_img ">
+                                <img src={Recipeimgggfour} alt="" />
+                            </div>
+                            <h5 className="text-center mt-3">{recipeNameeee}</h5>
+                            <div className="rating_container mt-2">
+                                <p className="fastar">
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                </p>
+                                <p className="rating"><div className="text-center">{ratingfour}</div></p>
+                            </div>
+                            <p className="text-center mt-2"> {parafour}</p>
+                            <button className="btn_submit">Feature</button>
                         </div>
                     </div>
                 </div>

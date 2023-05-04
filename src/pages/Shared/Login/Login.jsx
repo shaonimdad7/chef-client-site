@@ -13,7 +13,7 @@ import { FaRegEye } from 'react-icons/fa';
 const Login = () => {
     const [show, setShow] = useState(false);
 
-    const { signIn } = useContext(AuthContext);
+    const { signIn, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -35,6 +35,29 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error);
+            })
+    }
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(result => {
+                const loggedUser = result.user;
+                console.log(loggedUser);
+                navigate(from, { replace: true })
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+    const handleGithubSignIn = () => {
+        signInWithGithub()
+            .then(result => {
+                const loggedUser = result.user;
+                console.log(loggedUser)
+                navigate(from, { replace: true })
+            })
+            .catch(error => {
+                console.log(error)
             })
     }
     return (
@@ -63,8 +86,8 @@ const Login = () => {
             </form>
             <p><small>New here? <Link to="/signup">Create New Account</Link></small></p>
             <div className='btn_container'>
-                <button className='btn_google'> <FaGoogle /> Login With Google </button>
-                <button className='btn_google'> <FaGithub /> Login With Github </button>
+                <button onClick={handleGoogleSignIn} className='btn_google'> <FaGoogle /> Login With Google </button>
+                <button onClick={handleGithubSignIn} className='btn_google'> <FaGithub /> Login With Github </button>
             </div>
         </div>
     );
